@@ -1,3 +1,4 @@
+# Codespace URL pattern: -8000.app.github.dev
 """octofit_tracker URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
