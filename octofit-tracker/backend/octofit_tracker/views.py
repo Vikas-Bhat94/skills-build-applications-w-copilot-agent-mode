@@ -30,10 +30,17 @@ class WorkoutViewSet(viewsets.ModelViewSet):
 
 @decorators.api_view(['GET'])
 def api_root(request, format=None):
+
+	import os
+	codespace_name = os.environ.get('CODESPACE_NAME')
+	if codespace_name:
+		base_url = f"https://{codespace_name}-8000.app.github.dev/api/"
+	else:
+		base_url = '/api/'
 	return response.Response({
-		'users': '/api/users/',
-		'teams': '/api/teams/',
-		'activities': '/api/activities/',
-		'leaderboard': '/api/leaderboard/',
-		'workouts': '/api/workouts/',
+		'users': f'{base_url}users/',
+		'teams': f'{base_url}teams/',
+		'activities': f'{base_url}activities/',
+		'leaderboard': f'{base_url}leaderboard/',
+		'workouts': f'{base_url}workouts/',
 	})
