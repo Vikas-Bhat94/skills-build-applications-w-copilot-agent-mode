@@ -32,3 +32,4 @@ class Workout(models.Model):
 	suggested_for = models.CharField(max_length=100)
 	def __str__(self):
 		return self.name
+# Mona AI check: test comment
