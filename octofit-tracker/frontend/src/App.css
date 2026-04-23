@@ -1,0 +1,131 @@
+
+body {
+  background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%);
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background: rgba(79, 138, 139, 0.95);
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: #fff;
+  padding: 2rem 3rem 2rem 2rem;
+  border-radius: 0 0 24px 24px;
+  box-shadow: 0 4px 24px rgba(79,138,139,0.12);
+}
+
+.App-link {
+  color: #ffb74d;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+.App-link:hover {
+  color: #ff9800;
+}
+
+nav {
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(79,138,139,0.08);
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  margin-bottom: 2rem;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  font-weight: 500;
+}
+nav a {
+  color: #4f8a8b;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+nav a:hover {
+  color: #ff9800;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #4f8a8b;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(79,138,139,0.08);
+}
+th, td {
+  border: 1px solid #b2ebf2;
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+th {
+  background: #4f8a8b;
+  color: #fff;
+}
+tr:nth-child(even) {
+  background: #e0f7fa;
+}
+
+button, .btn {
+  background: #ffb74d;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 0.5rem 0;
+  transition: background 0.2s;
+}
+button:hover, .btn:hover {
+  background: #ff9800;
+}
+
+.octofit-logo {
+  height: 48px;
+  margin-right: 1.5rem;
+  vertical-align: middle;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
